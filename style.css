@@ -1,0 +1,235 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: optional;
+}
+nav{
+    background: black;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid green;
+    position: fixed;
+}
+/*icon label*/
+
+nav label{
+    width: 35px;
+    height: 35px;
+    float: right;
+    margin-right: 20px;
+    background: none;
+    margin-top: 10px;
+    cursor: pointer;
+    display:none ;
+}
+.sp1,.sp2,.sp3{
+    background: white;
+    width: 100%;
+    height: 3px;
+    margin-top: 5px;
+}
+nav img{
+    width: 50px;
+    height: 50px;
+}
+nav h3{
+    position: fixed;
+    margin-top: -39px;
+    color:white;
+    margin-left: 50px;
+    font:1em initial;
+    font-style: italic;
+}
+ul{
+    float: right;
+}
+ul li{
+    display: inline-block;
+    line-height: 28px;
+    background: none;
+    padding: 10px;
+}
+ul li :hover{
+    background: white;
+    padding: 10px;
+    color:black;
+}
+ul li a{
+    font: 1em initial;
+    font-style: italic;
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+    line-height: 28px;
+}
+#check{
+    display: none;
+}
+
+@media (max-width:800px) {
+    ul{
+        display: block;
+        float: none;
+        background: black;
+        text-align: center;
+        height: 100vh;
+        margin-top: -8px; 
+        transform: translateY(0vh);
+    }
+    ul li{
+        display: block;
+        width: 100%;
+        height: 50px;
+        background: white;
+        margin-top: 10px;
+        color: black;
+    }
+    ul li a{
+        color:black;
+    }
+    nav label{
+        display: block;
+    }
+    #check:checked ~ ul{
+        transform: translateY(100vh);
+    }
+    .follow_h3{
+        display: none;
+    }
+}
+#home{
+    
+}
+#home img{
+    width: 100%;
+    height:100% ;
+    margin-top: 50px;
+}
+
+/*contact div*/
+
+#cotacts{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    background: black;
+}
+#contacts img{
+    width: 100%;
+    height: 100%;
+}
+.location{
+    float: right;
+    background: rgb(30, 255, 255);
+    padding: 10px;
+    font: 3em initial;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 15px;
+}
+
+
+/*Follow div*/
+
+#follow{
+    width: 30%;
+    height: fit-content;
+    text-align: center;
+    float: right;
+    border: 2px solid black;
+    padding: 10px;
+    overflow-x: hidden;
+}
+@media (max-width:800px) {
+    #follow{
+        width: 16%;
+    }
+}
+#follow .facebook{
+    width: 100%;
+    height: 40px;
+    border: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: auto;
+}
+
+#follow .facebook button{
+    width: 39px;
+    height: 39px;
+    border: 2px solid black;
+    float: left;
+    border-radius: 50%;
+    margin-top: -1px;
+    margin-left: -2px;
+
+}
+.facebook button img{
+    width: 38px;
+    height: 38px ;
+    border-radius: 50%;
+    margin-top: -2px;
+    position: static;
+    
+}
+#youtube{
+    border: 1px solid black;
+}
+/*support div*/
+
+#support{
+    background: black;
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    text-align: right;
+}
+#support button{
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+}
+.button_img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#sp_img_1{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+#sp_img_2{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+/*about div*/
+#about{
+    float: left;
+    border: 2px solid black;
+    text-align: center;
+    width: 70%;
+    overflow-x: hidden;
+}
+@media (max-width:800px) {
+    #about{
+        width: 84%;
+    }
+}
+
+/*Gallery div*/
+
+#gallery{
+    text-align: center;
+    width: 100%;
+    margin-top: 300px;
+}
